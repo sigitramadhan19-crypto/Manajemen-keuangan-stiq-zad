@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  --color-on-primary-container: #f5fff7;
+  --color-tertiary-container: #b95650;
+  --color-background: #f8f9f9;
+  --color-primary-container: #00855e;
+  --color-on-tertiary: #ffffff;
+  --color-secondary-fixed-dim: #c2c6d3;
+  --color-inverse-primary: #69dbab;
+  --color-tertiary-fixed: #ffdad6;
+  --color-surface-variant: #e1e3e3;
+  --color-on-secondary-container: #5e636e;
+  --color-on-primary-fixed-variant: #005138;
+  --color-on-primary-fixed: #002114;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-bright: #f8f9f9;
+  --color-surface-container-highest: #e1e3e3;
+  --color-on-tertiary-container: #fffbff;
+  --color-primary: #006949;
+  --color-on-background: #191c1c;
+  --color-on-secondary-fixed-variant: #424751;
+  --color-on-surface-variant: #3d4a43;
+  --color-primary-fixed-dim: #69dbab;
+  --color-on-error: #ffffff;
+  --color-surface-tint: #006c4b;
+  --color-inverse-on-surface: #f0f1f1;
+  --color-surface-container-low: #f3f4f4;
+  --color-on-secondary: #ffffff;
+  --color-tertiary: #9a3e39;
+  --color-secondary-fixed: #dee2ef;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #86f8c5;
+  --color-error: #ba1a1a;
+  --color-on-tertiary-fixed: #410003;
+  --color-secondary: #595e69;
+  --color-outline-variant: #bccac0;
+  --color-on-tertiary-fixed-variant: #7e2a26;
+  --color-surface-container: #edeeee;
+  --color-surface-dim: #d9dada;
+  --color-inverse-surface: #2e3131;
+  --color-error-container: #ffdad6;
+  --color-on-primary: #ffffff;
+  --color-tertiary-fixed-dim: #ffb3ad;
+  --color-secondary-container: #dbdfec;
+  --color-on-secondary-fixed: #171c25;
+  --color-surface: #f8f9f9;
+  --color-on-surface: #191c1c;
+  --color-surface-container-high: #e7e8e8;
+  --color-outline: #6d7a72;
+
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  --spacing-container-padding: 24px;
+  --spacing-gutter-table: 12px;
+  --spacing-density-comfortable: 16px;
+  --spacing-density-compact: 8px;
+  --spacing-margin-section: 32px;
+  --spacing-unit: 4px;
+
+  --font-financial-data: Geist, sans-serif;
+  --font-headline-md: Geist, sans-serif;
+  --font-headline-sm: Geist, sans-serif;
+  --font-display-lg: Geist, sans-serif;
+  --font-body-md: Inter, sans-serif;
+  --font-label-caps: Geist, sans-serif;
+  --font-body-lg: Inter, sans-serif;
+  --font-body-sm: Inter, sans-serif;
+
+  --text-financial-data: 14px;
+  --text-financial-data--line-height: 20px;
+  --text-financial-data--letter-spacing: 0.01em;
+  --text-financial-data--font-weight: 600;
+
+  --text-headline-md: 24px;
+  --text-headline-md--line-height: 32px;
+  --text-headline-md--font-weight: 600;
+
+  --text-headline-sm: 18px;
+  --text-headline-sm--line-height: 24px;
+  --text-headline-sm--font-weight: 600;
+
+  --text-display-lg: 48px;
+  --text-display-lg--line-height: 56px;
+  --text-display-lg--letter-spacing: -0.02em;
+  --text-display-lg--font-weight: 700;
+
+  --text-body-md: 14px;
+  --text-body-md--line-height: 20px;
+  --text-body-md--font-weight: 400;
+
+  --text-label-caps: 11px;
+  --text-label-caps--line-height: 16px;
+  --text-label-caps--letter-spacing: 0.05em;
+  --text-label-caps--font-weight: 700;
+
+  --text-body-lg: 16px;
+  --text-body-lg--line-height: 24px;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-sm: 12px;
+  --text-body-sm--line-height: 16px;
+  --text-body-sm--font-weight: 400;
+}
+
+@layer utilities {
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .material-symbols-outlined.fill {
+    font-variation-settings: 'FILL' 1;
+  }
+  .drawer-overlay {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .drawer-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .drawer-panel {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .drawer-panel.active {
+    transform: translateX(0);
+  }
+}
+
+@layer base {
+  button, a, [role="button"], input[type="submit"], input[type="button"], input[type="reset"] {
+    cursor: pointer;
+  }
+}

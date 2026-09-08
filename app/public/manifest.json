@@ -1,0 +1,21 @@
+{
+  "name": "STIQ ZAD Financial Management",
+  "short_name": "STIQ ZAD Finance",
+  "description": "Sistem Informasi Keuangan STIQ ZAD",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f9f9",
+  "theme_color": "#006949",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
