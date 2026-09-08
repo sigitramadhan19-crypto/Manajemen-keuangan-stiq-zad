@@ -3,7 +3,7 @@ import type {
   Database,
   Student, StudentInsert, StudentUpdate,
   FeeProfile, FeeProfileInsert, FeeProfileUpdate,
-  BillStatus, BillWithStudent,
+  BillStatus, BillWithStudent, BillInsert,
   PaymentWithBill, PaymentInsert,
   StudentProgram, StudentStatus,
   PaymentStatus,

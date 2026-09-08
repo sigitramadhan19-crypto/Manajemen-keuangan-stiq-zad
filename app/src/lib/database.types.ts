@@ -65,6 +65,7 @@ export interface Database {
           fee_profile_id?: string | null
           updated_at?: string
         }
+          Relationships: any[]
       }
       fee_profiles: {
         Row: {
@@ -93,6 +94,7 @@ export interface Database {
           is_active?: boolean
           updated_at?: string
         }
+          Relationships: any[]
       }
       bills: {
         Row: {
@@ -130,6 +132,7 @@ export interface Database {
           status?: BillStatus
           updated_at?: string
         }
+          Relationships: any[]
       }
       payments: {
         Row: {
@@ -167,6 +170,7 @@ export interface Database {
           notes?: string | null
           verified_by?: string | null
         }
+          Relationships: any[]
       }
       audit_logs: {
         Row: {
@@ -201,6 +205,7 @@ export interface Database {
           user_id?: string | null
           reason?: string | null
         }
+          Relationships: any[]
       }
     }
   }
